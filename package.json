@@ -14,11 +14,11 @@
   ],
   "homepage": "https://appium.io",
   "bugs": {
-    "url": "https://github.com/appium/appium-chromium-driver/issues"
+    "url": "https://github.com/fushuai2016/appium-chromium-driver/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/appium/appium-chromium-driver.git"
+    "url": "https://github.com/fushuai2016/appium-chromium-driver"
   },
   "license": "Apache-2.0",
   "author": "https://github.com/appium",
