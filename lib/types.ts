@@ -1,6 +1,6 @@
 import type {DriverCaps, W3CDriverCaps} from '@appium/types';
-import type {CDConstraints} from './driver';
-
+import type {CDConstraints} from './index';
+export type * from './driver/types';
 /**
  * W3C-style caps for {@link ChromiumDriver}
  * @public

@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-exports.ChromiumDriver = require('./build/lib/driver.js').ChromiumDriver;
+exports.ChromiumDriver = require('./build/lib/index.js').ChromiumDriver;

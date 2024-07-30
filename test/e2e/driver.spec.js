@@ -1,13 +1,13 @@
 import {main as startAppium} from 'appium';
 import { waitForCondition } from 'asyncbox';
 import path from 'path';
+import os from 'os';
 import {remote} from 'webdriverio';
 
-const PLATFORM_ENV = process.env.TEST_PLATFORM || '';
-
-const PLATFORM = PLATFORM_ENV.toLowerCase() === 'macos' ? 'mac' :
-  PLATFORM_ENV.toLowerCase() ||
-  'mac';
+const osPlatform = os.platform();
+const isMac = /darwin/i.test(osPlatform);
+const isWin = /win32/i.test(osPlatform);
+const PLATFORM = isMac ? 'mac' : (isWin ? 'windows' : 'mac');
 const PORT = process.env.TEST_PORT || 4780;
 const HOST = '127.0.0.1';
 const CHROME_BIN = process.env.TEST_CHROME;
@@ -19,6 +19,7 @@ const DEF_CAPS = {
   browserName: 'chrome',
   'appium:automationName': 'Chromium',
   'appium:autodownloadEnabled': true,
+  'appium:useSystemExecutable': true,
   webSocketUrl: true,
 };
 

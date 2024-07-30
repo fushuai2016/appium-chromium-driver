@@ -21,6 +21,12 @@ using this project are:
   analysis](https://github.com/appium/appium/tree/master/packages/images-plugin)) not available via
   Chromedriver on its own.
 
+## ChangeLog
+
+-  merge `appium-chromedriver` package
+-  use `@testim/chrome-version` read chrome version of installed
+-  chromeDriver files cache
+
 ## Installation
 
 It's assumed that you have an Appium server (version 2.x+) installed, and that you have a browser
@@ -29,7 +35,7 @@ is to use the [Appium extension
 CLI](https://appium.github.io/appium/docs/en/latest/cli/extensions/) to install the driver:
 
 ```bash
-appium driver install chromium
+appium driver install --source=npm @rpa/appium-chromium-driver
 ```
 
 > **Note**

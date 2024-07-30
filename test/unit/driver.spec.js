@@ -1,4 +1,4 @@
-import ChromeDriver from '../../lib/driver';
+import ChromeDriver from '../../lib/index';
 
 describe('ChromeDriver', function() {
 

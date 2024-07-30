@@ -16,6 +16,7 @@
     "removeComments": false,
     "strict": false,
     "types": ["node", "mocha"],
+    "lib": ["ES2015"],
     "outDir": "build",
     "checkJs": true
   },
