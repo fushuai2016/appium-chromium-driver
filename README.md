@@ -35,7 +35,7 @@ is to use the [Appium extension
 CLI](https://appium.github.io/appium/docs/en/latest/cli/extensions/) to install the driver:
 
 ```bash
-appium driver install --source=npm @fushuai/appium-chromium-driver
+appium driver install --source=npm @rpai/appium-chromium-driver
 ```
 
 > **Note**
