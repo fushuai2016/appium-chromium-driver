@@ -1,6 +1,6 @@
 {
   "name": "@rpai/appium-chromium-driver",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Appium 2.x driver for Chromium-based browsers that work with Chromedriver",
   "keywords": [
     "appium",
@@ -31,6 +31,7 @@
     "config",
     "build",
     "index.js",
+    "install-npm.js",
     "README.md",
     "CHANGELOG.md",
     "LICENSE",
