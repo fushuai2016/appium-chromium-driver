@@ -21,6 +21,10 @@ const DEF_CAPS = {
   'appium:autodownloadEnabled': true,
   'appium:useSystemExecutable': true,
   webSocketUrl: true,
+  'appium:executable': path.join(process.cwd(), 'chromedriver/win/chromedriver_win32_v113.0.5672.63.exe'),
+ 'goog:chromeOptions': {
+    binary: path.join(process.cwd(), 'chromedriver/chrome-win64/chrome.exe'),
+  }
 };
 
 // GitHub Actions
